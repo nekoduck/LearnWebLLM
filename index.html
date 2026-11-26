@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LearnWebLLM</title>
+  <meta name="description" content="交互式大模型学习站" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
+  <link rel="stylesheet" href="assets/vendor/katex/katex.min.css" />
+  <link rel="stylesheet" href="assets/vendor/hljs-light.css" id="hljs-light" />
+  <link rel="stylesheet" href="assets/vendor/hljs-dark.css" id="hljs-dark" disabled />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script>
+    // 尽早应用主题，避免闪烁
+    try {
+      const t = localStorage.getItem('lw-theme') ||
+        (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.dataset.theme = t;
+    } catch (e) { document.documentElement.dataset.theme = 'light'; }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <button class="icon-btn only-mobile" id="menu-btn" aria-label="打开目录">☰</button>
+    <a class="brand" href="#/"><span class="logo">🧠</span><span id="site-title">LearnWebLLM</span></a>
+    <nav class="crumbs" id="crumbs"></nav>
+    <div class="spacer"></div>
+    <button class="icon-btn" id="theme-btn" aria-label="切换主题" title="切换明暗主题">🌓</button>
+  </header>
+
+  <div class="layout" id="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="main" id="main">
+      <div class="loading">加载中…</div>
+    </main>
+    <aside class="toc" id="toc"></aside>
+  </div>
+  <div class="scrim" id="scrim"></div>
+
+  <script src="assets/vendor/marked.min.js"></script>
+  <script src="assets/vendor/highlight.min.js"></script>
+  <script src="assets/vendor/katex/katex.min.js"></script>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

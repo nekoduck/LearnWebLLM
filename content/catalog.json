@@ -1,0 +1,7 @@
+{
+  "site": {
+    "title": "LearnWebLLM",
+    "subtitle": "图解 + 交互，动手理解大语言模型"
+  },
+  "courses": ["llm-basics", "guide"]
+}

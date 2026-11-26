@@ -1,0 +1,13 @@
+{
+  "title": "大模型入门（示例课程）",
+  "description": "从分词、注意力到采样，用可交互的演示理解 LLM 是如何“说话”的。",
+  "icon": "🤖",
+  "color": "#4f6ef7",
+  "level": "入门",
+  "lessons": [
+    { "id": "01-what-is-llm", "title": "什么是大语言模型", "summary": "LLM 的本质：预测下一个 token", "duration": "8 分钟" },
+    { "id": "02-tokenization", "title": "分词：文本如何变成数字", "summary": "BPE 算法与可视化", "duration": "12 分钟" },
+    { "id": "03-attention", "title": "注意力机制", "summary": "每个词在“看”哪里？", "duration": "15 分钟" },
+    { "id": "04-sampling", "title": "生成与采样", "summary": "温度、Top-k、Top-p", "duration": "10 分钟" }
+  ]
+}

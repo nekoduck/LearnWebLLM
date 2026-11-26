@@ -1,0 +1,11 @@
+{
+  "title": "内容写作指南",
+  "description": "本站支持的全部内容格式：Markdown、公式、流程图、图表、测验、交互 Demo……附源码对照。",
+  "icon": "🛠️",
+  "color": "#16a34a",
+  "level": "维护者",
+  "lessons": [
+    { "id": "components", "title": "组件一览", "summary": "每种组件的写法与效果", "duration": "参考" },
+    { "id": "new-demo", "title": "如何新增一个交互 Demo", "summary": "写一个 JS 文件即可", "duration": "参考" }
+  ]
+}
